@@ -55,7 +55,7 @@ jobs:
 
     - name: Perform CodeQL Analysis
       run: |
-        ${{ env.CODEQL_BINARY }} database analyze ${{ env.CODEQL_DATABASE }} ${{ env.CODEQL_QUERIES }} --format=sarif-latest --output=${{ env.CODEQL_SARIF_FILE }}
+        ${{ env.CODEQL_BINARY }} database analyze ${{ env.CODEQL_DATABASE }} ${{ env.CODEQL_QUERIES }} --format=sarif-latest --output=${{ env.CODEQL_SARIF_FILE }} --sarif-category=javascript-is-cool
         
     - name: Upload CodeQL SARIF Results
       run: |
