@@ -25,7 +25,7 @@ env:
   CODEQL_LANGUAGE: javascript
   # ..codeql-suites/ has multiple suites. The built-in queries is called <language>-code-scanning.qls
   # https://github.com/github/codeql/tree/main/javascript/ql/src/codeql-suites
-  CODEQL_QUERIES: /home/runner/work/codeql-home/codeql/qlpacks/codeql-javascript/codeql-suites/javascript-security-and-quality.qls
+  CODEQL_QUERIES: javascript-security-and-quality.qls
 
 jobs:
   analyze:
